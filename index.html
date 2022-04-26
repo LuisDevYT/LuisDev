@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/667417c7ec.js" crossorigin="anonymous"></script>
+    <meta name="theme-color" content="#08090d" />
+
+    <title>LuisDev</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            height: 100vh auto;
+        }
+        
+        .background {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url("./Background.webp") #050818b3;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-blend-mode: darken;
+            filter: blur(10px);
+            z-index: -1;
+            transform: scale(1.1); 
+            background-position: center;
+        }
+
+        .container {
+            width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .top p{
+            font-size: 26px;
+            width: 160px;
+            text-align: center;
+            }
+        .top {
+            display: flex;
+            align-items: center;
+            font-weight: 900;
+            margin: 10px;
+        }
+
+        h1 {
+            font-size: clamp(16px, 15vw, 280px);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+            margin: 0;
+        }
+        
+        hr {
+            width: 20vh;
+            color: white;
+            border-radius: 5px;
+            margin: 0 15px
+        }
+
+        .social-icons {
+            margin: 30px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+        }
+        
+        a {
+            color: white;
+        }
+        
+        i {
+            font-size: 55px;
+            margin: 15px;
+        }
+        
+        @media screen and (max-width:640px) {
+           
+            .container{
+                width: 90%;
+            }
+
+            h1 {
+            font-size: 100px;
+            }
+
+            hr {
+            width: 12vh;
+            margin: 0;
+            }
+
+            i {
+            font-size: 45px;
+            margin: 10px;
+        }
+        }       
+    </style>
+</head>
+
+<body >
+    <div class="background"></div>
+    <div class="container">
+        <div class="top">
+            <hr>
+            <a href="./index.html" style= "text-decoration: none"><p>LuisDev</p></a>
+            <hr>
+        </div>
+        <h1>Hello!</h1>
+        <div class="social-icons">
+            <a href="https://www.youtube.com/luisdevyt" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/LuisDev_" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://play.google.com/store/apps/dev?id=5777976397832555359" target="_blank"><i class="fab fa-google-play"></i></a>
+        </div>
+    </div>
+</body>
+</html>
