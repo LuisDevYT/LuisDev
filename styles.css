@@ -361,6 +361,7 @@ h1 {
 }
 
 .store-link {
+  min-width: 128px;
   min-height: 40px;
   display: inline-flex;
   align-items: center;
