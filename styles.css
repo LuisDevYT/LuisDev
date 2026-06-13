@@ -242,8 +242,8 @@ h1 {
 }
 
 .release-media.portrait-media {
-  width: 92px;
-  height: 124px;
+  width: 112px;
+  height: 134px;
 }
 
 .release-media.portrait-media img {
@@ -692,8 +692,8 @@ h1 {
   }
 
   .release-media.portrait-media {
-    width: 74px;
-    height: 96px;
+    width: 82px;
+    height: 98px;
   }
 
   .release-media img {
@@ -702,6 +702,16 @@ h1 {
 
   .release-media.portrait-media img {
     border-radius: 12px;
+  }
+
+  .store-links {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .store-link {
+    width: 148px;
+    justify-content: flex-start;
   }
 
   .contact-ribbon {
