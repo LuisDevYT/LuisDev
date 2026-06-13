@@ -1,128 +1,268 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/667417c7ec.js" crossorigin="anonymous"></script>
-    <meta name="theme-color" content="#08090d" />
-
-    <title>LuisDev</title>
-    <style>
-        body {
-            padding: 0;
-            margin: 0;
-            font-family: Tahoma, Geneva, Verdana, sans-serif;
-            color: white;
-            height: 100vh auto;
-        }
-        
-        .background {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: url("./Background.webp") #050818b3;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-blend-mode: darken;
-            filter: blur(10px);
-            z-index: -1;
-            transform: scale(1.1); 
-            background-position: center;
-        }
-
-        .container {
-            width: 600px;
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .top p{
-            font-size: 26px;
-            width: 160px;
-            text-align: center;
-            }
-        .top {
-            display: flex;
-            align-items: center;
-            font-weight: 900;
-            margin: 10px;
-        }
-
-        h1 {
-            font-size: clamp(16px, 15vw, 280px);
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 100%;
-            text-align: center;
-            margin: 0;
-        }
-        
-        hr {
-            width: 20vh;
-            color: white;
-            border-radius: 5px;
-            margin: 0 15px
-        }
-
-        .social-icons {
-            margin: 30px auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            position: absolute;
-            bottom: 0;
-        }
-        
-        a {
-            color: white;
-        }
-        
-        i {
-            font-size: 55px;
-            margin: 15px;
-        }
-        
-        @media screen and (max-width:640px) {
-           
-            .container{
-                width: 90%;
-            }
-
-            h1 {
-            font-size: 100px;
-            }
-
-            hr {
-            width: 12vh;
-            margin: 0;
-            }
-
-            i {
-            font-size: 45px;
-            margin: 10px;
-        }
-        }       
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101820">
+  <meta name="description" content="Mobile and PC games, videos, and strange little projects released under LuisDev.">
+  <meta property="og:title" content="LuisDev">
+  <meta property="og:description" content="Mobile and PC games, videos, and strange little projects released under LuisDev.">
+  <title>LuisDev | Games</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="./index.html" aria-label="LuisDev home">
+        <span>LuisDev</span>
+      </a>
+      <div class="nav-links">
+        <a href="#releases">Releases</a>
+        <a href="#stores">Stores</a>
+        <a href="./PrivacyPolicy.html">Privacy</a>
+      </div>
+    </nav>
+  </header>
 
-<body >
-    <div class="background"></div>
-    <div class="container">
-        <div class="top">
-            <hr>
-            <a href="./index.html" style= "text-decoration: none"><p>LuisDev</p></a>
-            <hr>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <h1>Strange games, fast ideas</h1>
+          <p class="hero-copy">
+            Mobile and PC games, videos, and strange little projects released under LuisDev.
+          </p>
+          <div class="actions" aria-label="Main links">
+            <a class="button primary" href="#releases">View games</a>
+            <a class="icon-link hero-social" href="https://www.youtube.com/@LuisDevYT" target="_blank" rel="noopener noreferrer" aria-label="LuisDev on YouTube">
+              <img src="./assets/icons/youtube.svg" alt="">
+            </a>
+            <a class="icon-link hero-social" href="https://x.com/LuisDev_" target="_blank" rel="noopener noreferrer" aria-label="LuisDev on X">
+              <img src="./assets/icons/x.svg" alt="">
+            </a>
+          </div>
         </div>
-        <h1>Hello!</h1>
-        <div class="social-icons">
-            <a href="https://www.youtube.com/luisdevyt" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://twitter.com/LuisDev_" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://play.google.com/store/apps/dev?id=5777976397832555359" target="_blank"><i class="fab fa-google-play"></i></a>
+      </div>
+    </section>
+
+    <section class="section alt" id="releases">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Releases</h2>
+          <p>Sorted from newest to oldest using public release dates scraped from App Store, Google Play, and Steam.</p>
         </div>
+
+        <div class="release-grid">
+          <article class="release-card">
+            <a class="release-media" href="https://apps.apple.com/co/app/scaryjuan2/id6778340361" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/apps/scaryjuan2-icon.webp" alt="Scary Juan 2 icon">
+            </a>
+            <div class="release-body">
+              <div class="release-topline">
+                <time class="release-date" datetime="2026-06-11">Jun 11, 2026</time>
+                <span class="release-rank">New</span>
+              </div>
+              <h3>Scary Juan 2</h3>
+              <p>A Scary Juan sequel with conversational AI, pet care, minigames, customization, and potion transformations.</p>
+              <ul class="platforms"><li>Simulation</li><li>Virtual pet</li></ul>
+              <div class="store-links">
+                <a class="store-link store-play" href="https://play.google.com/store/apps/details?id=com.LuisDev.TalkingJuan2" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/google-play.svg" alt="">Google Play</a>
+                <a class="store-link store-app" href="https://apps.apple.com/co/app/scaryjuan2/id6778340361" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/app-store.svg" alt="">App Store</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="release-card">
+            <a class="release-media portrait-media" href="https://store.steampowered.com/app/4131300/Internal_Extraction/" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/apps/internal-extraction.webp" alt="Internal Extraction artwork">
+            </a>
+            <div class="release-body">
+              <div class="release-topline">
+                <time class="release-date" datetime="2025-11-21">Nov 21, 2025</time>
+              </div>
+              <h3>Internal Extraction</h3>
+              <p>Co-op survival horror on a destructible procedural planet, with exploration, resources, crafting, and survival pressure.</p>
+              <ul class="platforms"><li>PC</li><li>Co-op</li><li>Survival horror</li></ul>
+              <div class="store-links">
+                <a class="store-link store-steam" href="https://store.steampowered.com/app/4131300/Internal_Extraction/" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/steam.svg" alt="">Steam</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="release-card">
+            <a class="release-media" href="https://play.google.com/store/apps/details?id=com.LuisDev.BeastSmash" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/apps/beast-smash-icon.webp" alt="Beast Smash: Meme Fight icon">
+            </a>
+            <div class="release-body">
+              <div class="release-topline">
+                <time class="release-date" datetime="2024-08-28">Aug 28, 2024</time>
+              </div>
+              <h3>Beast Smash: Meme Fight</h3>
+              <p>Multiplayer fights with meme characters, dynamic arenas, and fast combat.</p>
+              <ul class="platforms"><li>Action</li><li>Multiplayer</li></ul>
+              <div class="store-links">
+                <a class="store-link store-play" href="https://play.google.com/store/apps/details?id=com.LuisDev.BeastSmash" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/google-play.svg" alt="">Google Play</a>
+                <a class="store-link store-app" href="https://apps.apple.com/co/app/beast-smash-meme-fight/id6670238189" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/app-store.svg" alt="">App Store</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="release-card">
+            <a class="release-media" href="https://play.google.com/store/apps/details?id=com.LuisDev.ScaryAna" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/apps/scary-ana-icon.webp" alt="Scary Ana icon">
+            </a>
+            <div class="release-body">
+              <div class="release-topline">
+                <time class="release-date" datetime="2024-01-02">Jan 2, 2024</time>
+              </div>
+              <h3>Scary Ana</h3>
+              <p>A strange virtual pet experience with care activities, reactions, and exploration.</p>
+              <ul class="platforms"><li>Simulation</li><li>Virtual pet</li></ul>
+              <div class="store-links">
+                <a class="store-link store-play" href="https://play.google.com/store/apps/details?id=com.LuisDev.ScaryAna" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/google-play.svg" alt="">Google Play</a>
+                <a class="store-link store-app" href="https://apps.apple.com/co/app/scary-ana/id6475314930" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/app-store.svg" alt="">App Store</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="release-card">
+            <a class="release-media" href="https://play.google.com/store/apps/details?id=com.LuisDev.BeastParty" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/apps/beast-party-icon.webp" alt="Beast Party icon">
+            </a>
+            <div class="release-body">
+              <div class="release-topline">
+                <time class="release-date" datetime="2023-08-07">Aug 7, 2023</time>
+              </div>
+              <h3>Beast Party</h3>
+              <p>A multiplayer party game with stage building, traps, obstacles, and chaotic physics.</p>
+              <ul class="platforms"><li>Party action</li><li>Multiplayer</li></ul>
+              <div class="store-links">
+                <a class="store-link store-play" href="https://play.google.com/store/apps/details?id=com.LuisDev.BeastParty" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/google-play.svg" alt="">Google Play</a>
+                <a class="store-link store-app" href="https://apps.apple.com/co/app/beast-party/id6458978900" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/app-store.svg" alt="">App Store</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="release-card">
+            <a class="release-media" href="https://play.google.com/store/apps/details?id=com.LuisDev.UltimateGuys" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/apps/ultimate-guys-icon.webp" alt="Ultimate Guys icon">
+            </a>
+            <div class="release-body">
+              <div class="release-topline">
+                <time class="release-date" datetime="2023-01-17">Jan 17, 2023</time>
+              </div>
+              <h3>Ultimate Guys</h3>
+              <p>Multiplayer races with rounds, obstacles, unlockable skins, and elimination matches.</p>
+              <ul class="platforms"><li>Action</li><li>Runner party</li></ul>
+              <div class="store-links">
+                <a class="store-link store-play" href="https://play.google.com/store/apps/details?id=com.LuisDev.UltimateGuys" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/google-play.svg" alt="">Google Play</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="release-card">
+            <a class="release-media" href="https://play.google.com/store/apps/details?id=com.LuisDev.TalkingJuan" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/apps/scary-juan-icon.webp" alt="Scary Juan icon">
+            </a>
+            <div class="release-body">
+              <div class="release-topline">
+                <time class="release-date" datetime="2022-11-29">Nov 29, 2022</time>
+              </div>
+              <h3>Scary Juan</h3>
+              <p>A horror virtual pet where players take care of Juan, keep him happy, and explore his world.</p>
+              <ul class="platforms"><li>Simulation</li><li>Horror pet</li></ul>
+              <div class="store-links">
+                <a class="store-link store-play" href="https://play.google.com/store/apps/details?id=com.LuisDev.TalkingJuan" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/google-play.svg" alt="">Google Play</a>
+                <a class="store-link store-app" href="https://apps.apple.com/co/app/scary-juan/id1669062396" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/app-store.svg" alt="">App Store</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="release-card">
+            <a class="release-media" href="https://play.google.com/store/apps/details?id=com.LuisDev.SubwayRunnerRTX" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/apps/subway-runner-rtx-icon.webp" alt="Subway Runner RTX icon">
+            </a>
+            <div class="release-body">
+              <div class="release-topline">
+                <time class="release-date" datetime="2022-09-30">Sep 30, 2022</time>
+              </div>
+              <h3>Subway Runner RTX</h3>
+              <p>A mobile runner about dodging, moving fast, and keeping an arcade rhythm.</p>
+              <ul class="platforms"><li>Runner</li><li>Arcade</li></ul>
+              <div class="store-links">
+                <a class="store-link store-play" href="https://play.google.com/store/apps/details?id=com.LuisDev.SubwayRunnerRTX" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/google-play.svg" alt="">Google Play</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="release-card">
+            <a class="release-media" href="https://play.google.com/store/apps/details?id=com.LuisDev.PeuRTX" target="_blank" rel="noopener noreferrer">
+              <img src="./assets/apps/scary-peu-icon.webp" alt="Scary Peu icon">
+            </a>
+            <div class="release-body">
+              <div class="release-topline">
+                <time class="release-date" datetime="2022-07-27">Jul 27, 2022</time>
+              </div>
+              <h3>Scary Peu</h3>
+              <p>A virtual pet where players feed, care for, and experiment with paths to unlock the ending.</p>
+              <ul class="platforms"><li>Casual</li><li>Virtual pet</li></ul>
+              <div class="store-links">
+                <a class="store-link store-play" href="https://play.google.com/store/apps/details?id=com.LuisDev.PeuRTX" target="_blank" rel="noopener noreferrer"><img class="link-icon" src="./assets/icons/google-play.svg" alt="">Google Play</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stores">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Official stores</h2>
+          <p>Verified catalog pages for Android, iOS, iPadOS, and PC releases.</p>
+        </div>
+        <div class="store-directory">
+          <a class="store-card" href="https://play.google.com/store/apps/dev?id=5777976397832555359" target="_blank" rel="noopener noreferrer">
+            <span class="store-card-icon"><img src="./assets/icons/google-play.svg" alt=""></span>
+            <span>
+              <strong>Google Play</strong>
+              <small>Android catalog under Luis_Dev</small>
+            </span>
+            <span class="store-card-action">View catalog</span>
+          </a>
+          <a class="store-card" href="https://apps.apple.com/co/developer/luis-gan/id1669062398" target="_blank" rel="noopener noreferrer">
+            <span class="store-card-icon"><img src="./assets/icons/app-store.svg" alt=""></span>
+            <span>
+              <strong>App Store</strong>
+              <small>iPhone and iPad catalog under Luis Gan</small>
+            </span>
+            <span class="store-card-action">View catalog</span>
+          </a>
+          <a class="store-card" href="https://store.steampowered.com/search/?developer=LuisDev" target="_blank" rel="noopener noreferrer">
+            <span class="store-card-icon"><img src="./assets/icons/steam.svg" alt=""></span>
+            <span>
+              <strong>Steam</strong>
+              <small>PC projects under LuisDev</small>
+            </span>
+            <span class="store-card-action">View catalog</span>
+          </a>
+        </div>
+
+        <a class="contact-ribbon" href="mailto:luisdevcontacto@gmail.com">
+          <span>
+            <strong>Contact</strong>
+            <small>Support, publishing, and privacy questions</small>
+          </span>
+          <span>luisdevcontacto@gmail.com</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 LuisDev. All rights reserved.</span>
     </div>
+  </footer>
 </body>
 </html>
