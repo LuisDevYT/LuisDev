@@ -589,17 +589,13 @@ h1 {
 
 @media (max-width: 960px) {
   .nav {
-    min-height: auto;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    align-items: flex-start;
-    flex-direction: column;
+    min-height: 62px;
     gap: 16px;
   }
 
   .nav-links {
-    width: 100%;
-    flex-wrap: wrap;
+    flex: 0 1 auto;
+    flex-wrap: nowrap;
     gap: 12px;
   }
 
@@ -651,6 +647,20 @@ h1 {
 @media (max-width: 520px) {
   :root {
     --page-pad: 14px;
+  }
+
+  .nav {
+    min-height: 58px;
+    gap: 10px;
+  }
+
+  .brand {
+    font-size: 14px;
+  }
+
+  .nav-links {
+    gap: 10px;
+    font-size: 13px;
   }
 
   .language-switch {
